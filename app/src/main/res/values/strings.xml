@@ -4,9 +4,8 @@
     <string name="phone">Phone no.: 510&#8211;111&#8211;1111</string>
     <string name="email">Contact us: info@lisasRestaurant.com</string>
     <string name="url">Website: www.lisasrestaurant.com</string>
-    <string name="hours">Hours: Everyday from 11AM-10PM </string>
-    <string name="description">Come and try authentic Italian food in your neighborhood. We take Party Reservations.</string>
-
+    <string name="hours">Hours: Everyday from 11 AM to 10 PM </string>
+    <string name="description">Experience the taste of Italy at Lisa\'s! From handmade pasta to wood-fired pizzas, we bring authentic Italian flavors to your neighborhood. Perfect for family dinners and special celebrations.</string>
     <string name="headerImage">Header Image</string>
     <string name="topImage">Top Image</string>
     <string name="bottomImage">Bottom Image</string>
