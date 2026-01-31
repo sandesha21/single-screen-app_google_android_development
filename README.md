@@ -98,7 +98,7 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="screenshots/page1.png" alt="Single Screen Restaurant Android App Screenshot" width="300"/>
+  <img src="screenshots/homepage.png" alt="Single Screen Restaurant Android App Screenshot" width="300"/>
   <p><em>Main screen showcasing restaurant information and interactive elements</em></p>
 </div>
 
