@@ -19,18 +19,20 @@
         <ImageView
             android:id="@+id/mainbackground"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/mainBackgroundImage"
-            android:contentDescription="@string/topImage"
+            android:layout_height="wrap_content"
             android:layout_below="@id/pizzaemoji"
+            android:layout_marginTop="0dp"
             android:background="@drawable/italianfood"
+            android:contentDescription="@string/topImage"
             android:scaleType="centerCrop" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/bottomImage"
             android:layout_below="@id/hours"
+            android:layout_marginTop="0dp"
             android:background="@drawable/italianfood1"
+            android:contentDescription="@string/bottomImage"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -38,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/mainbackground"
+            android:layout_marginTop="0dp"
             android:background="@color/backgroundGreen"
             android:fontFamily="sans-serif-medium"
             android:padding="@dimen/padding"
