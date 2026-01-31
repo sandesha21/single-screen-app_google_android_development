@@ -72,7 +72,7 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ### Installation & Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/single-screen-restaurant-android-app.git
+   git clone https://github.com/sandesh21/single-screen-restaurant-android-app.git
    cd single-screen-restaurant-android-app
    ```
 
