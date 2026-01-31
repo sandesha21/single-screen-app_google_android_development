@@ -61,6 +61,39 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 
 ---
 
+## 🚀 Getting Started
+
+### Prerequisites
+- **Android Studio** (Arctic Fox or later)
+- **Java Development Kit (JDK)** 8 or higher
+- **Android SDK** with API level 21+ 
+- **Gradle** 8.5+ (included with Android Studio)
+
+### Installation & Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/single-screen-restaurant-android-app.git
+   cd single-screen-restaurant-android-app
+   ```
+
+2. **Open in Android Studio**
+   - Launch Android Studio
+   - Select "Open an existing project"
+   - Navigate to the cloned directory and select it
+
+3. **Build the project**
+   - Android Studio will automatically sync Gradle dependencies
+   - Wait for the build to complete
+
+4. **Run the app**
+   - Connect an Android device or start an emulator
+   - Click the "Run" button or press `Shift + F10`
+
+### Project Structure
+The project follows standard Android architecture with clean separation of concerns and proper resource organization.
+
+---
+
 ## App Features
 
 **Business Information:**
