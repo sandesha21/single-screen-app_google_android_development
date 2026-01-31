@@ -1,8 +1,65 @@
-# Lisa's Italian Restaurant - Single Screen App
+# Single Screen Restaurant Android App
 
-Android Basics Nanodegree - Project 1: Build a Single Screen App
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+![Material Design](https://img.shields.io/badge/Material%20Design-757575?style=for-the-badge&logo=material-design&logoColor=white)
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+![Project Status](https://img.shields.io/badge/Status-Complete-success.svg?style=flat-square)
+![Android API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat-square)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)
+
+Android Nanodegree - Project: Build a Single Screen App
 
 A single-screen Android app showcasing Lisa's Italian Restaurant, featuring authentic Italian cuisine in Dublin, CA.
+
+---
+
+## 🏷️ Keywords & Topics
+
+**Primary Keywords:** Android Development • Mobile App • Restaurant App • Single Screen Design • User Interface  
+**Technical Stack:** Java • Android Studio • XML Layouts • Material Design • ScrollView • Intent Actions  
+**Business Focus:** Restaurant Branding • Customer Engagement • Contact Integration • Local Business • Food Service  
+**Industry:** Food & Beverage • Restaurant Technology • Mobile Applications • Local Business • Hospitality  
+**Project Type:** Mobile Application Development | Industry: Restaurant & Food Service | Focus: Customer Experience & Business Showcase
+
+---
+
+## 📁 File Structure
+
+```
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/lisasitalianrestaurant/
+│   │   │   │   └── MainActivity.java                    # Main activity with restaurant info and interactions
+│   │   │   ├── res/
+│   │   │   │   ├── drawable/                           # Restaurant images and app icons
+│   │   │   │   │   ├── italianfood.jpg                 # Main restaurant food image
+│   │   │   │   │   ├── italianfood1.jpg                # Additional food showcase image
+│   │   │   │   │   └── pizzaemoji.jpg                  # Pizza emoji branding image
+│   │   │   │   ├── layout/                             # UI layout files
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── strings.xml                     # Externalized text resources
+│   │   │   │   │   ├── colors.xml                      # Italian-themed color palette
+│   │   │   │   │   └── styles.xml                      # Material Design styling
+│   │   │   │   └── mipmap-*/                           # App launcher icons (multiple densities)
+│   │   │   └── AndroidManifest.xml                     # App configuration and permissions
+│   │   ├── androidTest/                                # UI instrumentation tests
+│   │   └── test/                                       # Unit tests
+│   ├── build.gradle                                    # App-level build configuration
+│   └── proguard-rules.pro                             # Code obfuscation rules
+├── gradle/                                             # Gradle wrapper files
+├── screenshots/
+│   └── page1.png                                       # App screenshot for documentation
+├── build.gradle                                        # Project-level build configuration
+├── settings.gradle                                     # Project settings
+├── README.md                                           # Project overview and documentation
+└── LICENSE                                             # Project license information
+```
+
+---
 
 ## App Features
 
@@ -24,6 +81,8 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 - Accessibility support with content descriptions
 - Externalized string resources for localization
 
+---
+
 ## Business Details
 
 - **Name**: Lisa's Italian Restaurant
@@ -34,6 +93,17 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 - **Hours**: Everyday from 11AM-10PM
 - **Specialty**: Authentic Italian food with party reservations
 
+---
+
+## 📱 Screenshots
+
+<div align="center">
+  <img src="screenshots/page1.png" alt="Single Screen Restaurant Android App Screenshot" width="300"/>
+  <p><em>Main screen showcasing restaurant information and interactive elements</em></p>
+</div>
+
+---
+
 ## Project Requirements Met
 
 ✅ Business name  
@@ -42,3 +112,20 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ✅ Business address  
 ✅ Business description  
 ✅ Hours of operation
+
+---
+
+## 👨‍💻 Author  
+
+**Sandesh S. Badwaik**  
+- Google Android Nanodegree Graduate
+- Mobile App Developer
+- Data Scientist & Machine Learning Engineer* 
+- Specializing in Android development and data engineering
+- Passionate about creating intuitive user experiences
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandesha21)
+
+---
+
+🌟 **If you found this project helpful, please give it a ⭐!**
