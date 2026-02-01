@@ -134,3 +134,65 @@ ehthumbs_vista.db
 # VS Code
 .vscode/
 *.code-workspace
+
+# JetBrains IDEs (IntelliJ, Android Studio)
+.idea/sonarlint/
+
+# Backup files
+*.bak
+*.backup
+*~.nib
+
+# Android NDK
+obj/
+
+# Android Studio 4.1+
+.idea/shelf/
+
+# Crashlytics
+crashlytics-build.properties
+fabric.properties
+
+# Flutter/Dart (if ever used)
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Temporary files
+*.orig
+*.rej
+
+# Kotlin
+*.kt.swp
+
+# Android Lint
+lint-results.xml
+lint-results_files/
+lint-report.html
+
+# Android Studio Profiler
+*.hprof
+
+# Memory dumps
+*.dump
+
+# Test results
+test-results/
+test-outputs/
+
+# Jacoco (code coverage)
+*.exec
+jacoco.xml
+
+# R8/ProGuard mapping files (uncomment if not needed for crash reporting)
+# mapping.txt
+
+# Android Auto Backup
+.android/
+
+# Gradle Daemon
+.gradle/daemon/
+
+# Build cache
+.build-cache/
