@@ -30,34 +30,26 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 
 ```
 ├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/lisasitalianrestaurant/
-│   │   │   │   └── MainActivity.java                    # Main activity with restaurant info and interactions
-│   │   │   ├── res/
-│   │   │   │   ├── drawable/                           # Restaurant images and app icons
-│   │   │   │   │   ├── italianfood.jpg                 # Main restaurant food image
-│   │   │   │   │   ├── italianfood1.jpg                # Additional food showcase image
-│   │   │   │   │   └── pizzaemoji.jpg                  # Pizza emoji branding image
-│   │   │   │   ├── layout/                             # UI layout files
-│   │   │   │   ├── values/
-│   │   │   │   │   ├── strings.xml                     # Externalized text resources
-│   │   │   │   │   ├── colors.xml                      # Italian-themed color palette
-│   │   │   │   │   └── styles.xml                      # Material Design styling
-│   │   │   │   └── mipmap-*/                           # App launcher icons (multiple densities)
-│   │   │   └── AndroidManifest.xml                     # App configuration and permissions
-│   │   ├── androidTest/                                # UI instrumentation tests
-│   │   └── test/                                       # Unit tests
-│   ├── build.gradle                                    # App-level build configuration
+│   ├── src/main/
+│   │   ├── java/.../MainActivity.java                  # Main activity implementation
+│   │   ├── res/                                        # App resources
+│   │   │   ├── drawable/                               # Images and icons
+│   │   │   ├── layout/                                 # UI layouts
+│   │   │   ├── values/                                 # Strings, colors, styles
+│   │   │   └── mipmap-*/                               # App launcher icons
+│   │   └── AndroidManifest.xml                         # App configuration
+│   ├── build.gradle                                    # App build configuration
 │   └── proguard-rules.pro                             # Code obfuscation rules
-├── gradle/                                             # Gradle wrapper files
-├── screenshots/
-│   └── page1.png                                       # App screenshot for documentation
-├── build.gradle                                        # Project-level build configuration
+├── gradle/wrapper/                                     # Gradle wrapper files
+├── screenshots/                                        # App screenshots
+├── .gitignore                                          # Git ignore patterns
+├── build.gradle                                        # Project build configuration
 ├── settings.gradle                                     # Project settings
-├── README.md                                           # Project overview and documentation
-└── LICENSE                                             # Project license information
+├── README.md                                           # Project documentation
+└── LICENSE                                             # License information
 ```
+
+**Note:** Build artifacts (`.gradle/`, `build/`, `local.properties`) and IDE user settings are excluded via `.gitignore`
 
 ---
 
@@ -154,8 +146,8 @@ The project follows standard Android architecture with clean separation of conce
 - Google Android Nanodegree Graduate
 - Mobile App Developer
 - Data Scientist & Machine Learning Engineer* 
-- Specializing in Android development and data engineering
 - Passionate about creating intuitive user experiences
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandesha21)
 
