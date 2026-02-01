@@ -171,10 +171,8 @@ lint-results.xml
 lint-results_files/
 lint-report.html
 
-# Android Studio Profiler
+# Memory dumps and profiling
 *.hprof
-
-# Memory dumps
 *.dump
 
 # Test results
@@ -196,3 +194,13 @@ jacoco.xml
 
 # Build cache
 .build-cache/
+
+# Android Studio AI Assistant
+.idea/ai-assistant/
+
+# Compose compiler reports
+**/compose_compiler_config.conf
+**/compose-reports/
+
+# Baseline profiles
+baseline-prof.txt
