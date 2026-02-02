@@ -172,7 +172,7 @@ lint-results_files/
 lint-report.html
 
 # Memory dumps and profiling
-*.hprof
+#*.hprof
 *.dump
 
 # Test results

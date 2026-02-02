@@ -1,112 +1,125 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/pizzaemoji"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#009246"
-        android:src="@drawable/pizzaemoji" />
-
-    <ImageView
-        android:id="@+id/mainbackground"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/pizzaemoji"
-        android:background="@drawable/italianfood"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:id="@+id/description"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mainbackground"
-        android:text="@string/description"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="#ffffff"
-        android:background="#009246"
-        android:padding="8dp" />
+        tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/description"
-        android:autoLink="map"
-        android:background="#ffffff"
-        android:fontFamily="sans-serif-medium"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
-        android:paddingRight="8dp"
-        android:text="@string/location"
-        android:textColor="#ce2b37"
-        android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/pizza_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/backgroundGreen"
+            android:src="@drawable/pizza_icon"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/pizza_emoji" />
 
-    <TextView
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/location"
-        android:autoLink="phone"
-        android:background="#ffffff"
-        android:fontFamily="sans-serif-medium"
-        android:paddingLeft="16dp"
-        android:paddingRight="8dp"
-        android:text="@string/phone"
-        android:textColor="#ce2b37"
-        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/phone"
-        android:autoLink="email"
-        android:text="@string/email"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="#ce2b37"
-        android:background="#ffffff"
-        android:paddingLeft="16dp"
-        android:paddingRight="8dp" />
+        <ImageView
+            android:id="@+id/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/pizza_emoji"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/italian_food_1"
+            android:contentDescription="@string/topImage"
+            android:scaleType="centerCrop" />
 
-    <TextView
-        android:id="@+id/url"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/email"
-        android:autoLink="web"
-        android:text="@string/url"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="#ce2b37"
-        android:background="#ffffff"
-        android:paddingLeft="16dp"
-        android:paddingRight="8dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/italian_food_2"
+            android:contentDescription="@string/bottomImage"
+            android:scaleType="centerCrop" />
 
-    <TextView
-        android:id="@+id/hours"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/url"
-        android:text="@string/hours"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="#ce2b37"
-        android:background="#ffffff"
-        android:paddingLeft="16dp"
-        android:paddingRight="8dp"
-        android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_background"
+            android:layout_marginTop="0dp"
+            android:background="@color/backgroundGreen"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/padding"
+            android:text="@string/description"
+            android:textColor="@color/companyDescriptionText"
+            android:textSize="@dimen/detailsTextSize" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/hours"
-        android:background="@drawable/italianfood1"
-        android:scaleType="centerCrop" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:autoLink="map"
+            android:background="@color/backgroundWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding"
+            android:text="@string/location"
+            android:textColor="@color/companyDetailsText"
+            android:textSize="@dimen/detailsTextSize" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:autoLink="phone"
+            android:background="@color/backgroundWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:text="@string/phone"
+            android:textColor="@color/companyDetailsText"
+            android:textSize="@dimen/detailsTextSize" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:autoLink="email"
+            android:background="@color/backgroundWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:text="@string/email"
+            android:textColor="@color/companyDetailsText"
+            android:textSize="@dimen/detailsTextSize" />
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:autoLink="web"
+            android:background="@color/backgroundWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:text="@string/url"
+            android:textColor="@color/companyDetailsText"
+            android:textSize="@dimen/detailsTextSize" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/url"
+            android:background="@color/backgroundWhite"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:text="@string/hours"
+            android:textColor="@color/companyDetailsText"
+            android:textSize="@dimen/detailsTextSize" />
+
+    </RelativeLayout>
+</ScrollView>
