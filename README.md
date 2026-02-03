@@ -49,7 +49,20 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 └── LICENSE                                             # License information
 ```
 
-**Note:** Build artifacts (`.gradle/`, `build/`, `local.properties`) and IDE user settings are excluded via `.gitignore`
+---
+
+## 🎯 Project Overview
+
+This project demonstrates the creation of a single-screen Android application for a fictional Italian restaurant called "Lisa's Italian Restaurant." The app showcases essential business information including contact details, location, hours of operation, and menu highlights - all presented in a clean, responsive interface that adheres to Material Design principles.
+
+The application serves as a digital business card, providing customers with easy access to important information while demonstrating core Android development concepts such as:
+- Layout design with ScrollView
+- Intent handling for phone calls, emails, and maps
+- Resource management and string externalization
+- Material Design components and styling
+- Responsive UI design for various screen sizes
+
+**Note:** This project was developed as part of the Android Nanodegree program and serves as a demonstration of fundamental Android development skills.
 
 ---
 
@@ -108,7 +121,8 @@ The project follows standard Android architecture with clean separation of conce
 
 ---
 
-## Business Details
+## Business Details (sample)
+Lisa's Italian Restaurant is a local establishment located in Dublin, CA, offering authentic Italian cuisine with a focus on family dining and special occasions.
 
 - **Name**: Lisa's Italian Restaurant
 - **Location**: 104 Grafton St, Dublin, CA 94568
@@ -145,7 +159,7 @@ The project follows standard Android architecture with clean separation of conce
 **Sandesh S. Badwaik**  
 - Google Android Nanodegree Graduate
 - Mobile App Developer
-- Data Scientist & Machine Learning Engineer* 
+- Applied Data Scientist & Machine Learning Engineer
 - Passionate about creating intuitive user experiences
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
