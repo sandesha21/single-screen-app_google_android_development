@@ -7,8 +7,10 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
 ![Project Status](https://img.shields.io/badge/Status-Complete-success.svg?style=flat-square)
-![Android API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat-square)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)
+![Gradle](https://img.shields.io/badge/Gradle-8.5.2-blue.svg?style=flat-square)
+![Target SDK](https://img.shields.io/badge/Target%20SDK-36-orange.svg?style=flat-square)
+
 
 Android Nanodegree - Project: Build a Single Screen App
 
@@ -19,7 +21,7 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ## 🏷️ Keywords & Topics
 
 **Primary Keywords:** Android Development • Mobile App • Restaurant App • Single Screen Design • User Interface  
-**Technical Stack:** Java • Android Studio • XML Layouts • Material Design • ScrollView • Intent Actions  
+**Technical Stack:** Java • Android Studio • XML Layouts • Material Design • ScrollView • Intent Actions • AndroidX Libraries  
 **Business Focus:** Restaurant Branding • Customer Engagement • Contact Integration • Local Business • Food Service  
 **Industry:** Food & Beverage • Restaurant Technology • Mobile Applications • Local Business • Hospitality  
 **Project Type:** Mobile Application Development | Industry: Restaurant & Food Service | Focus: Customer Experience & Business Showcase
@@ -29,56 +31,62 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ## 📁 File Structure
 
 ```
-├── app/
-│   ├── src/main/
-│   │   ├── java/.../MainActivity.java                  # Main activity implementation
-│   │   ├── res/                                        # App resources
-│   │   │   ├── drawable/                               # Images and icons
-│   │   │   ├── layout/                                 # UI layouts
-│   │   │   ├── values/                                 # Strings, colors, styles
-│   │   │   └── mipmap-*/                               # App launcher icons
-│   │   └── AndroidManifest.xml                         # App configuration
-│   ├── build.gradle                                    # App build configuration
-│   └── proguard-rules.pro                             # Code obfuscation rules
-├── gradle/wrapper/                                     # Gradle wrapper files
-├── screenshots/                                        # App screenshots
-├── .gitignore                                          # Git ignore patterns
-├── build.gradle                                        # Project build configuration
-├── settings.gradle                                     # Project settings
-├── README.md                                           # Project documentation
-└── LICENSE                                             # License information
+├── app/src/main/
+│   ├── java/com/example/lisasitalianrestaurant/
+│   │   └── MainActivity.java
+│   ├── res/
+│   │   ├── drawable/          # Images and icons
+│   │   ├── layout/            # UI layouts
+│   │   └── values/            # Colors, strings, styles
+│   └── AndroidManifest.xml
+├── gradle/                    # Gradle wrapper
+├── screenshots/               # App screenshots
+├── build.gradle               # Project build config
+├── settings.gradle
+└── README.md
+└── LICENSE                    # License information
 ```
 
 ---
 
 ## 🎯 Project Overview
 
-This project demonstrates the creation of a single-screen Android application for a fictional Italian restaurant called "Lisa's Italian Restaurant." The app showcases essential business information including contact details, location, hours of operation, and menu highlights - all presented in a clean, responsive interface that adheres to Material Design principles.
+This is an **upgraded version** of the original single-screen Android application, enhanced with modern Android development practices and updated dependencies. The app showcases "Lisa's Italian Restaurant" with improved UI/UX and follows current Android development standards.
 
-The application serves as a digital business card, providing customers with easy access to important information while demonstrating core Android development concepts such as:
-- Layout design with ScrollView
+### Key Improvements in This Version:
+- **Updated to Android SDK 36** (Android 15) with minimum SDK 28
+- **Java 17 toolchain** for better performance and modern language features
+- **Latest AndroidX libraries** including Material Design Components 1.13.0
+- **Enhanced ScrollView layout** for better content organization
+- **Improved resource management** with proper color schemes and dimensions
+- **Better accessibility support** with comprehensive content descriptions
+- **Modern Gradle build system** (8.5.2) with optimized configurations
+
+The application serves as a digital business card, providing customers with easy access to important information while demonstrating modern Android development concepts such as:
+- Responsive ScrollView layout design
 - Intent handling for phone calls, emails, and maps
 - Resource management and string externalization
-- Material Design components and styling
-- Responsive UI design for various screen sizes
+- Material Design 3 components and theming
+- Modern build configurations and dependency management
+- Accessibility-first design principles
 
-**Note:** This project was developed as part of the Android Nanodegree program and serves as a demonstration of fundamental Android development skills.
+**Note:** This project demonstrates both fundamental and modern Android development practices, suitable for learning current industry standards.
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Android Studio** (Arctic Fox or later)
-- **Java Development Kit (JDK)** 8 or higher
-- **Android SDK** with API level 21+ 
+- **Android Studio** (Flamingo or later recommended)
+- **Java Development Kit (JDK)** 17 or higher
+- **Android SDK** with API level 28+ (Android 9.0)
 - **Gradle** 8.5+ (included with Android Studio)
 
 ### Installation & Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/sandesh21/single-screen-restaurant-android-app.git
-   cd single-screen-restaurant-android-app
+   git clone https://github.com/yourusername/LisasItalianResturants.git
+   cd LisasItalianResturants
    ```
 
 2. **Open in Android Studio**
@@ -114,10 +122,13 @@ The project follows standard Android architecture with clean separation of conce
 - Website link for online presence
 
 **Technical Implementation:**
-- Responsive ScrollView layout
-- Material Design theming with Italian colors
-- Accessibility support with content descriptions
-- Externalized string resources for localization
+- Responsive ScrollView layout with RelativeLayout
+- Material Design 3 theming with custom Italian color palette
+- Modern AndroidX libraries and components
+- Accessibility support with comprehensive content descriptions
+- Externalized string resources for internationalization support
+- Optimized for Android 9.0+ with target SDK 36
+- Java 17 toolchain for enhanced performance
 
 ---
 
@@ -137,20 +148,61 @@ Lisa's Italian Restaurant is a local establishment located in Dublin, CA, offeri
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="screenshots/homepage.png" alt="Single Screen Restaurant Android App Screenshot" width="300"/>
+  <img src="screenshots/homepage.png" alt="Lisa's Italian Restaurant Android App Screenshot" width="300"/>
   <p><em>Main screen showcasing restaurant information and interactive elements</em></p>
 </div>
 
 ---
 
+## 🛠️ Technical Specifications
+
+- **Minimum SDK**: 28 (Android 9.0)
+- **Target SDK**: 36 (Android 15)
+- **Compile SDK**: 36
+- **Java Version**: 17
+- **Gradle Version**: 8.5.2
+- **Build Tools**: Android Gradle Plugin 8.5.2
+
+### Key Dependencies:
+- AndroidX AppCompat 1.7.1
+- Material Design Components 1.13.0
+- ConstraintLayout 2.2.1
+- AndroidX Preference 1.2.1
+
+---
+
 ## Project Requirements Met
 
-✅ Business name  
-✅ Multiple business photos  
-✅ Contact information (phone, email, website)  
-✅ Business address  
-✅ Business description  
-✅ Hours of operation
+✅ Business name and branding  
+✅ Multiple high-quality business photos  
+✅ Complete contact information (phone, email, website)   
+✅ Compelling business description  
+✅ Hours of operation  
+✅ Modern Android development practices  
+✅ Accessibility compliance  
+✅ Material Design 3 implementation  
+✅ Responsive layout design
+
+---
+
+## � Upgrade from Original Version
+
+This project is an enhanced version of the [original single-screen app](https://github.com/sandesha21/single-screen-app_google_android_development/tree/v5_working) with significant improvements:
+
+### What's New:
+- **Modern Android SDK**: Upgraded from API 21+ to API 28+ (minimum) and API 36 (target)
+- **Java 17**: Updated from Java 8 for better performance and modern language features
+- **Latest Dependencies**: All AndroidX libraries updated to latest stable versions
+- **Enhanced UI**: Improved layout with better resource organization and color schemes
+- **Better Accessibility**: Comprehensive content descriptions and accessibility support
+- **Modern Build System**: Updated Gradle and build tools for faster builds
+- **Improved Resource Management**: Better organized colors, dimensions, and string resources
+
+### Migration Benefits:
+- Future-proof codebase compatible with latest Android versions
+- Better performance and security with modern dependencies
+- Enhanced user experience with Material Design 3 components
+- Improved maintainability and code organization
 
 ---
 
