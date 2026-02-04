@@ -6,4 +6,7 @@
     <string name="url">Website: www.lisasrestaurant.com</string>
     <string name="hours">Hours: Everyday from 11 AM to 10 PM </string>
     <string name="description">Experience the taste of Italy at Lisa\'s! From handmade pasta to wood-fired pizzas, we bring authentic Italian flavors to your neighborhood. Perfect for family dinners and special celebrations.</string>
+    <string name="pizza_emoji">Pizza emoji</string>
+    <string name="topImage">Italian food image</string>
+    <string name="bottomImage">Italian food bottom image</string>
 </resources>
