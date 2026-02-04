@@ -85,8 +85,8 @@ The application serves as a digital business card, providing customers with easy
 ### Installation & Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/LisasItalianResturants.git
-   cd LisasItalianResturants
+   git clone https://github.com/yourusername/LisasItalianRestaurant.git
+   cd LisasItalianRestaurant
    ```
 
 2. **Open in Android Studio**
