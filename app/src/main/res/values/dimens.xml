@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="pizza_emoji">35dp</dimen>
-    <dimen name="mainBackgroundImage">100dp</dimen>
     <dimen name="padding">10dp</dimen>
     <dimen name="detailsTextSize">20sp</dimen>
 </resources>
