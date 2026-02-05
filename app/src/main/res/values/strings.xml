@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Lisa\'s Italian Restaurant</string>
-    <string name="location"> Location: 104 Grafton St, Dublin, CA 94568 </string>
+    <string name="location">Location: 104 Grafton St, Dublin, CA 94568</string>
     <string name="phone">Phone no.: 510–111–1111</string>
-    <string name="email">Contact us: info@lisasResturant.com</string>
+    <string name="email">Contact us: info@lisasRestaurant.com</string>
     <string name="url">Website: www.lisasrestaurant.com</string>
-    <string name="hours">Hours: Everyday from 11 AM to 10 PM </string>
+    <string name="hours">Hours: Everyday from 11 AM to 10 PM</string>
     <string name="description">Experience the taste of Italy at Lisa\'s! From handmade pasta to wood-fired pizzas, we bring authentic Italian flavors to your neighborhood. Perfect for family dinners and special celebrations.</string>
-    <string name="pizza_emoji">Pizza emoji</string>
-    <string name="topImage">Italian food image</string>
-    <string name="bottomImage">Italian food bottom image</string>
+    <string name="pizza_emoji">Pizza emoji header</string>
+    <string name="topImage">Restaurant food image</string>
+    <string name="bottomImage">Restaurant food image</string>
+    <string name="app_description">Authentic Italian restaurant app with contact information and hours</string>
 </resources>
