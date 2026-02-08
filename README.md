@@ -33,18 +33,27 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ```
 ├── app/src/main/
 │   ├── java/com/example/lisasitalianrestaurant/
-│   │   └── MainActivity.java
+│   │   ├── MainActivity.java              # Main activity UI controller
+│   │   ├── RestaurantData.java            # Centralized restaurant data model
+│   │   └── RestaurantViewModel.java       # ViewModel for business logic
 │   ├── res/
-│   │   ├── drawable/          # Images and icons
-│   │   ├── layout/            # UI layouts
-│   │   └── values/            # Colors, strings, styles
+│   │   ├── drawable/                      # Images and icons
+│   │   ├── layout/                        # UI layouts
+│   │   └── values/                        # Colors, strings, styles
 │   └── AndroidManifest.xml
-├── gradle/                    # Gradle wrapper
-├── screenshots/               # App screenshots
-├── build.gradle               # Project build config
+├── app/src/test/java/com/example/lisasitalianrestaurant/
+│   ├── MainActivityTest.java              # Unit tests for MainActivity
+│   ├── RestaurantDataTest.java            # Unit tests for data model
+│   └── RestaurantViewModelTest.java       # Unit tests for ViewModel
+├── app/src/androidTest/java/com/example/lisasitalianrestaurant/
+│   └── MainActivityInstrumentedTest.java  # UI instrumented tests
+├── gradle/                                # Gradle wrapper
+├── screenshots/                           # App screenshots
+├── build.gradle                           # Project build config
 ├── settings.gradle
-└── README.md
-└── LICENSE                    # License information
+├── .gitignore
+├── README.md
+└── LICENSE                                # License information
 ```
 
 ---
@@ -168,10 +177,47 @@ Lisa's Italian Restaurant is a local establishment located in Dublin, CA, offeri
 - Material Design Components 1.13.0
 - ConstraintLayout 2.2.1
 - AndroidX Preference 1.2.1
+- AndroidX Lifecycle ViewModel 2.8.7
+- JUnit 4.13.2 (Unit Testing)
+- AndroidX Test Runner 1.7.0 (Instrumented Testing)
+- Espresso 3.7.0 (UI Testing)
 
 ---
 
-## Project Requirements Met
+## 🧪 Testing
+
+This project includes comprehensive unit and instrumented tests for quality assurance.
+
+### Running Tests
+
+**Unit Tests** (run locally on your machine):
+```bash
+./gradlew testDebugUnitTest
+```
+
+**Instrumented Tests** (run on Android emulator or device):
+```bash
+./gradlew connectedAndroidTest
+```
+
+### Test Coverage
+
+- **RestaurantDataTest**: Validates restaurant information data model
+- **RestaurantViewModelTest**: Tests ViewModel business logic and data retrieval
+- **MainActivityTest**: Verifies MainActivity initialization and inheritance
+- **MainActivityInstrumentedTest**: Tests UI elements and layout rendering
+
+### Architecture
+
+The app follows modern Android architecture patterns:
+
+- **RestaurantData.java**: Centralized data model containing all restaurant information
+- **RestaurantViewModel.java**: ViewModel for managing data and business logic
+- **MainActivity.java**: UI controller that displays restaurant information
+
+This separation of concerns makes the code more testable, maintainable, and scalable.
+
+---
 
 ✅ Business name and branding  
 ✅ Multiple high-quality business photos  
