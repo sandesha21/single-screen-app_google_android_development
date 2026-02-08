@@ -1,23 +1,69 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="72dp"
+        android:background="@color/headerGreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Restaurant name title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Pizza icon for branding -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pizza_icon"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+    <!-- SCROLLABLE CONTENT SECTION
+         Contains all restaurant information below the fixed header
+         Uses ScrollView to allow vertical scrolling when content exceeds screen height
+         fillViewport="true" ensures content fills available space -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Main content container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/pizza_emoji"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@color/headerGreen"
-            android:src="@drawable/pizza_icon"
-            android:scaleType="fitCenter"
-            android:contentDescription="@string/pizza_emoji" />
-
+        <!-- Featured food image at top of scrollable content -->
         <ImageView
             android:id="@+id/main_background"
             android:layout_width="match_parent"
@@ -26,6 +72,7 @@
             android:contentDescription="@string/topImage"
             android:scaleType="centerCrop" />
 
+        <!-- Restaurant description section with green background -->
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
@@ -37,12 +84,14 @@
             android:textColor="@color/white"
             android:textSize="@dimen/detailsTextSize" />
 
+        <!-- Contact information section with white background -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/white">
 
+            <!-- Location with map link (autoLink="map" makes it clickable) -->
             <TextView
                 android:id="@+id/location"
                 android:layout_width="match_parent"
@@ -55,6 +104,7 @@
                 android:textSize="@dimen/detailsTextSize"
                 android:textIsSelectable="true" />
 
+            <!-- Phone number with phone link (autoLink="phone" makes it clickable) -->
             <TextView
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
@@ -68,6 +118,7 @@
                 android:textSize="@dimen/detailsTextSize"
                 android:textIsSelectable="true" />
 
+            <!-- Email with email link (autoLink="email" makes it clickable) -->
             <TextView
                 android:id="@+id/email"
                 android:layout_width="match_parent"
@@ -81,6 +132,7 @@
                 android:textSize="@dimen/detailsTextSize"
                 android:textIsSelectable="true" />
 
+            <!-- Website with web link (autoLink="web" makes it clickable) -->
             <TextView
                 android:id="@+id/url"
                 android:layout_width="match_parent"
@@ -94,6 +146,7 @@
                 android:textSize="@dimen/detailsTextSize"
                 android:textIsSelectable="true" />
 
+            <!-- Business hours -->
             <TextView
                 android:id="@+id/hours"
                 android:layout_width="match_parent"
@@ -106,6 +159,7 @@
 
         </LinearLayout>
 
+        <!-- Featured food image at bottom of scrollable content -->
         <ImageView
             android:id="@+id/bottom_image"
             android:layout_width="match_parent"
@@ -116,3 +170,4 @@
 
     </LinearLayout>
 </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
