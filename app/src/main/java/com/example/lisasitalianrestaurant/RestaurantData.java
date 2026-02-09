@@ -6,8 +6,8 @@ package com.example.lisasitalianrestaurant;
  */
 public class RestaurantData {
     public static final String RESTAURANT_NAME = "Lisa's Italian Restaurant";
-    public static final String DESCRIPTION = "Welcome to Lisa's Italian Restaurant, where authentic Italian cuisine meets warm hospitality. Our family-owned establishment has been serving delicious traditional Italian dishes for over 20 years.";
-    public static final String LOCATION = "123 Italian Street, Food City, FC 12345\n(Tap to view on map)";
+    public static final String DESCRIPTION = "Experience the taste of Italy at Lisa's! From handmade pasta to wood-fired pizzas, we bring authentic Italian flavors to your neighborhood. Perfect for family dinners and special celebrations.";
+    public static final String LOCATION = "104 Grafton St, Dublin, CA 94568";
     public static final String PHONE = "Phone: (555) 123-4567";
     public static final String EMAIL = "Email: info@lisasitalian.com";
     public static final String WEBSITE = "Website: www.lisasitalian.com";
