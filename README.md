@@ -33,18 +33,14 @@ A single-screen Android app showcasing Lisa's Italian Restaurant, featuring auth
 ```
 ├── app/src/main/
 │   ├── java/com/example/lisasitalianrestaurant/
-│   │   ├── MainActivity.java              # Main activity UI controller
-│   │   ├── RestaurantData.java            # Centralized restaurant data model
-│   │   └── RestaurantViewModel.java       # ViewModel for business logic
+│   │   └── MainActivity.java              # Main activity - handles UI and system insets
 │   ├── res/
 │   │   ├── drawable/                      # Images and icons
-│   │   ├── layout/                        # UI layouts
-│   │   └── values/                        # Colors, strings, styles
+│   │   ├── layout/                        # UI layouts (activity_main.xml)
+│   │   └── values/                        # Colors, strings, styles, dimensions
 │   └── AndroidManifest.xml
 ├── app/src/test/java/com/example/lisasitalianrestaurant/
-│   ├── MainActivityTest.java              # Unit tests for MainActivity
-│   ├── RestaurantDataTest.java            # Unit tests for data model
-│   └── RestaurantViewModelTest.java       # Unit tests for ViewModel
+│   └── MainActivityTest.java              # Unit tests for MainActivity
 ├── app/src/androidTest/java/com/example/lisasitalianrestaurant/
 │   └── MainActivityInstrumentedTest.java  # UI instrumented tests
 ├── gradle/                                # Gradle wrapper
@@ -177,7 +173,7 @@ Lisa's Italian Restaurant is a local establishment located in Dublin, CA, offeri
 - Material Design Components 1.13.0
 - ConstraintLayout 2.2.1
 - AndroidX Preference 1.2.1
-- AndroidX Lifecycle ViewModel 2.8.7
+- AndroidX Core 1.15.0
 - JUnit 4.13.2 (Unit Testing)
 - AndroidX Test Runner 1.7.0 (Instrumented Testing)
 - Espresso 3.7.0 (UI Testing)
@@ -186,7 +182,7 @@ Lisa's Italian Restaurant is a local establishment located in Dublin, CA, offeri
 
 ## 🧪 Testing
 
-This project includes comprehensive unit and instrumented tests for quality assurance.
+This project includes unit and instrumented tests for quality assurance.
 
 ### Running Tests
 
@@ -202,20 +198,8 @@ This project includes comprehensive unit and instrumented tests for quality assu
 
 ### Test Coverage
 
-- **RestaurantDataTest**: Validates restaurant information data model
-- **RestaurantViewModelTest**: Tests ViewModel business logic and data retrieval
-- **MainActivityTest**: Verifies MainActivity initialization and inheritance
+- **MainActivityTest**: Verifies MainActivity class structure and inheritance
 - **MainActivityInstrumentedTest**: Tests UI elements and layout rendering
-
-### Architecture
-
-The app follows modern Android architecture patterns:
-
-- **RestaurantData.java**: Centralized data model containing all restaurant information
-- **RestaurantViewModel.java**: ViewModel for managing data and business logic
-- **MainActivity.java**: UI controller that displays restaurant information
-
-This separation of concerns makes the code more testable, maintainable, and scalable.
 
 ---
 
