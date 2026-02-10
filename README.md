@@ -90,8 +90,8 @@ The application serves as a digital business card, providing customers with easy
 ### Installation & Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/LisasItalianRestaurant.git
-   cd LisasItalianRestaurant
+   git clone https://github.com/sandesha21/single-screen-app_google_android_development.git
+   cd single-screen-app_google_android_development
    ```
 
 2. **Open in Android Studio**
